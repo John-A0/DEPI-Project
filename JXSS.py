@@ -199,6 +199,7 @@ def xss_attack_using_params(driver, url, payload):
 
 
 if __name__ == "__main__":
+    display_banner()
     url_to_scan = input("Enter the URL to scan for JavaScript XSS vulnerabilities: ")
     payload_file = input("Enter the path to your payload word list: ")
     analyze_url_for_xss(url_to_scan, payload_file)
